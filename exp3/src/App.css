@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(11, 167, 11);
+}
+
+.App {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+#container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-top: 22rem;
+  /* height: 50%; */
+}
+
+/* #distortion-text-component {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+} */
+
+#distortion {
+  background-color: pink;
+}
+
+@media screen and (min-width: 480px) {
+  /* #distortion-text-component {
+    width: 80%;
+    margin: 20rem;
+    display: flex;
+    flex-direction: column;
+  } */
+
+  #container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+}
