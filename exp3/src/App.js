@@ -44,7 +44,7 @@ function App() {
   return (
     <div className="App">
       <div id="container">
-        <Distortion text={"forgive me 4 analysing "} speed={0.5} />
+        <Distortion text={"forgive me 4 analysing you"} speed={0.5} />
         <Distortion text={"that is just my nature"} speed={0.6} />
       </div>
       {/* <ReactP5Wrapper sketch={box.sketch} rotation={16} /> */}
