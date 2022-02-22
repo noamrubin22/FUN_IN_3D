@@ -21,6 +21,9 @@ document.body.appendChild(renderer.domElement)
 const geometry = new THREE.SphereGeometry(1,32,32);
 const material = new THREE.MeshPhongMaterial();
 
+
+// const video = document.getElementById( 'video' );
+// const texture = new THREE.VideoTexture<HTMLVideoElement>( video );
 material.map= new THREE.TextureLoader().load('textures/diffuse_moon.jpg');
 material.bumpMap = new THREE.TextureLoader().load('textures/bump_moon.jpg');
 material.bumpScale =.015;
@@ -39,6 +42,8 @@ const starsMesh = new THREE.Mesh(starsGeometry, starsMaterial);
 starsMaterial.map = new THREE.TextureLoader().load('textures/stars.jpeg');
 starsMaterial.side= THREE.BackSide;
 scene.add(starsMesh);
+
+
 
 window.addEventListener('resize', onWindowResize, false)
 function onWindowResize() {
